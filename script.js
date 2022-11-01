@@ -10,9 +10,9 @@ const checkBirthdateLucky = () => {
         alert("Birthdate or Lucky Number missing !");
     } else {
         let date = birthDate.value.toString().replaceAll("-", "");
-        console.log(date);
+        // console.log(date);
         let sumOfBirthDate = calculateSum(Number(date));
-        console.log(sumOfBirthDate);
+        // console.log(sumOfBirthDate);
         let isLucky = checkLucky(sumOfBirthDate, Number(luckyNumber.value));
         printRemark(isLucky);
     }
@@ -36,12 +36,12 @@ const printRemark = (lucky) => {
     imgReaction.style.display = "block";
     divComment.style.display = "block";
     if (lucky) {
-        remarks.textContent = "WOAH ! You birthday is a lucky number, so...";
-        imgReaction.src = "/img/lucky.png";
+        remarks.textContent = " 🎉 WOW ! You birthday is a lucky number, so...";
+        imgReaction.src = "/img/lucky.jpg";
 
     } else {
-        remarks.textContent = "OHO ! Your's is not a lucky one !";
-        imgReaction.src = "/img/notlucky.png";
+        remarks.textContent = "😬...Time to find a new lucky number ";
+        imgReaction.src = "/img/unlucky.jpg";
 
     }
 }
