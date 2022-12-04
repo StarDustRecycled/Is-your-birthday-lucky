@@ -80,7 +80,41 @@ img{
     width: 40%;
     margin: 0 auto;
 }
+/* Footer */
 
+footer {
+    text-align: center;
+    position: absolute;
+    font-size: large;
+    text-shadow: 1px 1px 1px rgb(10, 124, 231);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 1.50 rem;
+    text-align: center;
+  }
+   
+  .fab {
+    margin: 0.5rem;
+  }
+  
+  .footer-list {
+    margin: 1rem;
+  }
+  
+  a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    text-decoration: underline;
+}
 /* footer{
     text-align: center;
     font-size: 1.5rem;
